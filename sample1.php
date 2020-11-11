@@ -9,4 +9,10 @@ if($test_1 === 7){
     echo 'それは' . $test_1 . 'ではありません';
 }
 
+$signale = '';
+if(empty($signale)){
+    echo '変数は空です';
+}
+
+
 ?>
