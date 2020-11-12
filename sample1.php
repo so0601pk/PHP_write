@@ -21,5 +21,18 @@ echo '<pre>';
 var_dump($array_push);
 echo'</pre>';
 
+//関数の自作
+$postalCode = '123-4567';
 
+function checkPostalcode($str){
+    $replaced = str_replace('-','',$str);
+    $length = strlen($replaced);
+
+    if($length === 7){
+        return true;
+    }
+    return false;
+}
+
+var_dump(checkPostalcode($postalCode));
 ?>
