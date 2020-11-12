@@ -13,6 +13,13 @@ $signale = '';
 if(empty($signale)){
     echo '変数は空です';
 }
+$array_push = ['りんご','なし'];
+
+array_push($array_push,'ぶどう','みかん');
+
+echo '<pre>';
+var_dump($array_push);
+echo'</pre>';
 
 
 ?>
